@@ -1,10 +1,13 @@
-//BoardPage.js
+//Home.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BoardList from './Sections/BoardList';
+import Header from './Sections/Header';
+import Siderbar from './Sections/Siderbar';
+import Footer from './Sections/Footer';
 
 
-function BoardPage() {
+function Home() {
     return (
     <div>
         <div>
@@ -17,9 +20,12 @@ function BoardPage() {
         </div>
         <div>
             <BoardList />
+            <Header />
+            <Siderbar />
+            <Footer />
         </div>
     </div>
     )
 }
  
-export default BoardPage;
+export default Home;
